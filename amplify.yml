@@ -9,6 +9,11 @@ backend:
     build:
       commands:
         - amplifyPush --simple
+frontend:
+  phases:
+    build:
+      commands: []
   artifacts:
     baseDirectory: src
-    files: "**/*"
+    files:
+      - "**/*"
