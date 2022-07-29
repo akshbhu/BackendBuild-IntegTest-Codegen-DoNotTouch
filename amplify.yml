@@ -5,10 +5,10 @@ backend:
       commands:
         - nvm install 14
         - nvm use 14
-        - npm install -g @aws-amplify/cli@latest
+        - npm install -g @aws-amplify/cli@beta
     build:
       commands:
-        - amplifyPush --simple --allow-destructive-graphql-schema-updates
+        - amplifyPush --simple
 frontend:
   phases:
     build:
